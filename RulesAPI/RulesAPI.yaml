@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: RulesAPI
+      app: Rulesapi
   template:
     metadata:
       labels:
-        app: RulesAPI
+        app: Rulesapi
     spec:
       containers:
       - name: rulesapirepos
@@ -18,7 +18,7 @@ spec:
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: dsconfigsn
+      - name: dsconfigsn1
 
 ---
 apiVersion: v1
@@ -30,4 +30,4 @@ spec:
   ports:
   - port: 80
   selector:
-    app: RulesAPI
+    app: Rulesapi
